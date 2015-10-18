@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "asar": "^0.7.2",
-    "electron-prebuilt": "^0.34.0"
+    "electron-prebuilt": "^0.34.0",
     "fs-jetpack": "^0.7.0",
     "gulp": "^3.9.0",
     "gulp-less": "^3.0.3",
@@ -16,6 +16,7 @@
     "rcedit": "^0.3.0"
   },
   "scripts": {
+    "preinstall": "node ./tasks/windows_force_32bit",
     "postinstall": "node ./tasks/app_npm_install",
     "app-install": "node ./tasks/app_npm_install",
     "build": "./node_modules/.bin/gulp build",
